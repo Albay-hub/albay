@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmail Aydın Sosyal Medya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Panel ve Buton Tasarımı */
+        .fixed-social-box {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+            align-items: flex-end;
+        }
+        .btn-social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            overflow: hidden;
+            transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .btn-social:hover, .btn-social:active {
+            width: 200px;
+        }
+        .btn-social i {
+            min-width: 60px;
+            text-align: center;
+            font-size: 26px;
+        }
+        .btn-text {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+        .btn-social:hover .btn-text, .btn-social:active .btn-text {
+            opacity: 1;
+        }
+        .btn-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .btn-youtube { background-color: #FF0000; }
+    </style>
+</head>
+<body>
+
+    <div class="fixed-social-box">
+  
+  <a href="https://www.instagram.com/bilinmeyenboyut?igsh=MTJwdzdnN3dzM3d2Yg==" class="btn-social btn-instagram" target="_blank">
+    <i class="fab fa-instagram"></i>
+    <span class="btn-text">İsmail Aydın</span>
+  </a>
+
+  <a href="https://youtube.com/@bilinmeyenboyut?si=H9EgvYq4CnwwfLXL" class="btn-social btn-youtube" target="_blank">
+    <i class="fab fa-youtube"></i>
+    <span class="btn-text">İsmail Aydın</span>
+  </a>
+
+</div>
+
+</body>
+</html>
